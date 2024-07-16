@@ -3,14 +3,13 @@ Utility functions for NASH DDT Overlays analysis
 """
 import sys
 import warnings
-sys.path.append("../../")
 warnings.filterwarnings('ignore')
 import pandas as pd
 import numpy as np
 import re
 from typing import List, Dict, Tuple
 from functools import partial
-from nash_ddt_utils import *
+
 from r_models import get_confintervals
 
 
