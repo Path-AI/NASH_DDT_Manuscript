@@ -79,7 +79,7 @@ frames_df = pd.concat([frames_df_art_he,frames_df_art_tc, frames_df_steat,frames
 slides_df = pd.concat([slides_df_steat,slides_df_balloon,slides_df_inflam,  slides_df_fib ])
 
 print("Writing distribution files.")
-# Posptprocessing to add percentages
+# Postprocessing to add percentages
 frames_df["%"] = np.round(frames_df["fraction"]*100,2)
 slides_df = slides_df.drop([col for col in list(slides_df) if col.find("Evaluate") != -1], axis = 1)
 slides_df["%"] = np.round(slides_df["fraction"]*100,2)

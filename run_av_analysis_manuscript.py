@@ -62,7 +62,7 @@ print("Generating results for Repeatability(Overall).")
 repeatability_df_all = av_object.get_rr_df(repeatability_df, "Repeatability")
 repeat_bootstrap_all = av_object.get_rr_df_bootstrap(repeatability_bootstrap_df, "Repeatability", "all", n_iterations = n_iterations)
 res_df_repeat_all = av_object.get_result_df_with_ci(repeatability_df_all, repeat_bootstrap_all,
-                              endpoint = "Repeatabilty",n_iterations = n_iterations)
+                              endpoint = "Repeatability",n_iterations = n_iterations)
 res_df_repeat_all.to_csv(files_path + "Repeatability mean agreement rate.csv", index = False)
 del(repeat_bootstrap_all)
 
